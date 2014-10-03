@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sinatra Form Exercise</title>
+    <link rel="stylesheet" href="/main.css" type="text/css">
+  </head>
+  <body>
+      <h1>Sinatra Form/Session Exercise</h1> 
+      <form id="sign-out" action="/sign-out" method="POST">
+        <button id="btn" name="submit">
+          <p>Sign-Out</p>
+        </button>
+      </form>
+      <%= flash[:notice] if flash[:notice] %>
+      <%= yield %>
+  </body>
+</html>

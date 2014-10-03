@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Sinatra Sign-in</title>
+  <link rel="stylesheet" href="/main.css" type="text/css">
+</head>
+<body>
+  <form id="sign-in" method="POST" action="/sign-in" autocomplete="off">
+    <label for="fname">First Name</label>
+    <input class="sign-in" type="text" name="[user]fname">
+    <label for="lname">Last Name</label>
+    <input class="sign-in" type="text" name="[user]lname">
+    <label for="email">Email</label>
+    <input class="sign-in" type="email" name="[user]email">
+    <label for="password">Password</label>
+    <input class="sign-in" type="password" name="[user]password">
+    <input id="submit" class="sign-in" type="submit" name="submit">
+  </form>
+</body>
